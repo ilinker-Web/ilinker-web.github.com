@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎加入 i-Linker 工作室</title>
+    <link rel="stylesheet" href="../tools/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="../tools/js/jquery-3.1.0.min.js"></script>
+    <script src="../tools/bm_js/bmob-min.js"></script>
+    <!--<script src="../tools/bootstrap/js/bootstrap.min.js"></script>-->
+    <script src="./js/index.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <h2>
+                欢迎加入 i-Linker 工作室
+                <br>
+                <small>现在我们需要采集一些你的信息</small>
+            </h2>
+            <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <span class="navbar-brand">i-Linker</span>
+                </div>
+            </nav>
+            <form role="form">
+                <fieldset>
+                    <legend>基本信息</legend>
+                    <div class="form-horizontal">
+                        <div class="col-md-4">
+                            <label for="formName" class="control-label">姓名(必填)</label>
+                            <input type="text" class="form-control" id="formName"/>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="formSex">性别(必填)</label>
+                            <select class="form-control" name="sex" id="formSex">
+                                <option value="0">请选择</option>
+                                <option value="男">男</option>
+                                <option value="女">女</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="formPlace" class="control-label">籍贯</label>
+                            <input type="text" class="form-control" id="formPlace"/>
+                        </div>
+                    </div>
+                    <div class="form-horizontal">
+                        <div class="col-md-12 column">
+                            <label for="formPhone" class="control-label">手机(必填)</label>
+                            <input type="text" class="form-control" id="formPhone">
+
+                            <label for="formQQ" class="control-label">QQ(必填)</label>
+                            <input type="text" class="form-control" id="formQQ">
+
+                            <label for="formEmail" class="control-label">邮箱</label>
+                            <input type="email" class="form-control" id="formEmail">
+
+                            <label for="formSpeciality" class="control-label">专长</label>
+                            <textarea class="form-control" id="formSpeciality"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>基本学校信息</legend>
+                    <div class="form-horizontal">
+                        <div class="col-md-6">
+                            <label for="tab_studyid" class="control-label">学号(必填)</label>
+                            <input id="tab_studyid" class="form-control" name="studyid" type="text">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="tab_live" class="control-label">宿舍楼</label>
+                            <input id="tab_live" class="form-control" name="studyid" type="text">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="tab_live_room" class="control-label">宿舍号</label>
+                            <input id="tab_live_room" class="form-control" name="studyid" type="text">
+                        </div>
+                    </div>
+                    <div class="form-horizontal">
+                        <div class="col-md-4">
+                            <label for="select_step" class="control-label">系别</label>
+                            <select id="select_step" class="form-control" name="select_step"></select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="select_specialty" class="control-label">专业(必填)</label>
+                            <select id="select_specialty" class="form-control" name="select_spe"></select>
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="tab_classroom" class="control-label">班级(必填)</label>
+                            <input id="tab_classroom" class="form-control" name="classroom" type="text">
+                        </div>
+                    </div>
+                    <div class="form-horizontal">
+                        <div class="col-md-6">
+                            <label for="tab_coacher">导员(必填)</label>
+                            <input id="tab_coacher" class="form-control" name="coacher" type="text">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="tab_coacher_phone">导员电话</label>
+                            <input id="tab_coacher_phone" class="form-control" name="coacher_phone" type="text">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>部门意向</legend>
+                    <div class="form-horizontal">
+                        <div class="col-md-12">
+                            <label for="select_department" class="control-label">部门选择意向</label>
+                            <select id="select_department" class="form-control" name="department"></select>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="row clearfix" style="margin-bottom: 50px">
+                    <div class="col-md-2">
+                        <button type="button" id="submit" class="btn btn-primary" style="width: 100%;" onclick="submitData()">提交注册</button>
+                    </div>
+                    <div class="col-md-3">
+                        <span id="submit_state" style="display: none; line-height: 34px;height: 34px">正在提交请求……</span>
+                    </div>
+                    <div class="col-md-7"></div>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

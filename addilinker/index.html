@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>加入我们!</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script src="../tools/js/jquery-3.1.0.js"></script>
+    <script src="../tools/bm_js/bmob-min.js"></script>
+    <script src="js/select_dept.js"></script>
+    <script>
+        initSelect("./res/init2.json");
+    </script>
+</head>
+<body>
+<div>
+    <div class="register_i_linker">
+        <div>加入我们!!</div>
+        <fieldset>
+            <legend>基本信息</legend>
+            <dl class="box">
+                <dt>姓名:</dt>
+                <dd>
+                    <input id="tab_name" name="name" type="text">
+                </dd>
+                <dt>手机:</dt>
+                <dd>
+                    <input id="tab_phone" name="phone" type="number">
+                </dd>
+                <dt>QQ:</dt>
+                <dd>
+                    <input id="tab_qq" name="qq" type="number">
+                </dd>
+            </dl>
+        </fieldset>
+        <fieldset>
+            <legend>学校信息</legend>
+            <dl class="box">
+                <dt>
+                    学号:
+                </dt>
+                <dd>
+                    <input id="tab_studyid" name="studyid" type="text">
+                </dd>
+                <dt>
+                    系别:
+                </dt>
+                <dd>
+                    <select id="select_step" name="select_step"></select>
+                </dd>
+                <dt>
+                    专业:
+                </dt>
+                <dd>
+                    <select  id="select_specialty" name="select_spe"></select>
+                </dd>
+                <dt>
+                    班级:
+                </dt>
+                <dd>
+                    <input id="tab_classroom" name="classroom"  type="text">
+                </dd>
+                <dt>
+                    导员:
+                </dt>
+                <dd>
+                    <input id="tab_coacher" name="coacher" type="text">
+                </dd>
+            </dl>
+        </fieldset>
+        <fieldset >
+            <legend>选择部门 </legend>
+            <dl class="box">
+                <dt>
+                    预期部门:
+                </dt>
+                <dd>
+                    <select id="select_department" name="department"></select>
+                </dd>
+            </dl>
+        </fieldset>
+
+    </div>
+    <div>
+        <dl>
+            <dt>姓名</dt>
+            <dd>name:</dd>
+            <dt>学号</dt>
+            <dt>专业</dt>
+            <dt>班级</dt>
+            <dt>导员</dt>
+            <dt>预期部门</dt>
+        </dl>
+    </div>
+</div>
+</body>
+</html>
