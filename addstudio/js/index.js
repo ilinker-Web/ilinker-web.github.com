@@ -54,7 +54,7 @@ function submitData() {
     if (isTrue) {
         $("#submit_state").css("display", "inline");
         var myname = $("#formName").val();
-        var sex = $("#formsex").val();
+        var sex = $("#formSex").val();
         var place = $("#formPlace").val();
         var phone = $("#formPhone").val();
         var qq = $("#formQQ").val();
